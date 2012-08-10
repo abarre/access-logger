@@ -1,7 +1,11 @@
 {
-        "name": "access-logger",
-        "description": "Extensive access logger middleware",
-        "version": "0.0.1",
-        "author": "Anthony BARRE <anthony.barre87@gmail.com>",
-        "main": "./access-logger.js"
+  "name": "access-logger",
+  "description": "Extensive access logger middleware",
+  "keywords": ["logger", "log4node", "middleware", "express"],
+  "version": "0.0.1",
+  "author": "Anthony BARRE <anthony.barre87@gmail.com>",
+  "main": "./access-logger.js",
+  "dependencies": {
+    "bytes": "0.0.1"
+  },
 }
