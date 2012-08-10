@@ -107,7 +107,7 @@ exports = module.exports = function logger(options) {
   if ('function' != typeof fmt) fmt = compile(fmt);
 
   // options
-  var log = options.logFunction;
+  var log = options.logFunction
     , buffer = options.buffer;
 
   // buffering support
