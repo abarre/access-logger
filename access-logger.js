@@ -107,7 +107,7 @@ exports = module.exports = function logger(options) {
   if ('function' != typeof fmt) fmt = compile(fmt);
 
   // options
-  var log = options.logFunction
+  var log = options.logger
     , buffer = options.buffer;
 
   // buffering support
@@ -126,8 +126,10 @@ exports = module.exports = function logger(options) {
     }, interval);
 
     // swap the stream
-    log = function (str) {
+    log =  {
+      'info': function (str) {
         buf.push(str);
+      }
     };
   }
 
@@ -138,7 +140,7 @@ exports = module.exports = function logger(options) {
     if (immediate) {
       var line = fmt(exports, req, res);
       if (null == line) return;
-      log(line);
+      log.info(line);
     // proxy end to output logging
     } else {
       var end = res.end;
@@ -147,7 +149,7 @@ exports = module.exports = function logger(options) {
         res.end(chunk, encoding);
         var line = fmt(exports, req, res);
         if (null == line) return;
-        log(line);
+        log.info(line);
       };
     }
 
