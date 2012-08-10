@@ -1,0 +1,7 @@
+{
+        "name": "access-logger",
+        "description": "Extensive access logger middleware",
+        "version": "0.0.1",
+        "author": "Anthony BARRE <anthony.barre87@gmail.com>",
+        "main": "./access-logger.js"
+}
