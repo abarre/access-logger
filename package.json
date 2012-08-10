@@ -7,5 +7,5 @@
   "main": "./access-logger.js",
   "dependencies": {
     "bytes": "0.0.1"
-  },
+  }
 }
