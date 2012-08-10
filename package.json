@@ -4,7 +4,13 @@
   "keywords": ["logger", "log4node", "middleware", "express"],
   "version": "0.0.1",
   "author": "Anthony BARRE <anthony.barre87@gmail.com>",
-  "main": "./access-logger.js",
+  "main": "./access_logger.js",
+  "repositories": [
+       {
+           "type": "git",
+           "url": "git://github.com/abarre/access-logger.git"
+       }
+   ],
   "dependencies": {
     "bytes": "0.0.1"
   }
